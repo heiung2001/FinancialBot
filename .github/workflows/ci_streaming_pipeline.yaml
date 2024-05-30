@@ -26,13 +26,13 @@ jobs:
           poetry-version: 1.5.1
       
       - name: Install packages
-        working-directory: ./streaming_pipeline
+        working-directory: streaming_pipeline
         run: make install_only_dev
       
       - name: Run PEP8 linter
-        working-directory: ./streaming_pipeline
+        working-directory: streaming_pipeline
         run: make lint_check
 
       - name: Run PEP8 format checker
-        working-directory: ./streaming_pipeline
+        working-directory: streaming_pipeline
         run: make format_check
